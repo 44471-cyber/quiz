@@ -1,0 +1,45 @@
+body {
+    align-items: center;
+    text-align: center;
+    background-color: gold;
+    font-size: 1.5rem;
+}
+h1 {
+    margin: 10px;
+}
+div {
+    margin: 10px;
+}
+.btn-container {
+    margin: 0;
+}
+#message {
+    margin: 10px;
+}
+#numpoint, #maxpoint {
+    margin: 0;
+}
+button {
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+#resp1 {
+    background-color: aqua;
+}
+#resp2 {
+    background-color: lightgreen;
+}
+#resp3 {
+    background-color: orange;
+}
+#resp4 {
+    background-color: crimson;
+}
+#restartBtn {
+    background-color: white;
+}
+#startBtn {
+    background-color: purple;
+    color: white;
+}
