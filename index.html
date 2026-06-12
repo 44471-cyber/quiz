@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="style.css">
+        <title>Quiz | Multi-Perguntas</title>
+    </head>
+    <body>
+        <h1 id="title">Quiz Multi-Perguntas</h1>
+        <button id="startBtn" onclick="startBtn()">Começar</button>
+        <h1 id="quest1">Qual é a capital de Portugal?</h1>
+        <h1 id="quest2" style="display:none;">Quanto é 30 * 3 ?</h1>
+        <h1 id="quest3" style="display:none;">Quantas pessoas existem no mundo?</h1>
+        <h1 id="win" style="display:none;">Parabéns, venceu o quiz!</h1>
+        <div class="btn-container">
+            <button id="resp1" onclick="btnA()">Lisboa</button>
+            <button id="resp2" onclick="btnB()">Porto</button>
+            <button id="resp3" onclick="btnC()">Aveiro</button>
+            <button id="resp4" onclick="btnD()">Guarda</button>
+        </div>
+        <div class="point">
+            <span id="point">Pontuação: </span>
+            <span id="numpoint">0</span>
+            <span id="maxpoint"> / 3</span>
+        </div>
+        <button id="restartBtn" style="display:none;" onclick="restartBtn()">Recomeçar</button>
+        <p id="message"></p>
+        <script src="index.js"></script>
+    </body>
+</html>
