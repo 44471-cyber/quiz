@@ -1,2 +1,2 @@
-# quiz
+# Quiz
 Quiz multi-perguntas, será que consegues adivinhar todas?
