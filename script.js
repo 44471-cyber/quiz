@@ -40,6 +40,7 @@ function startBtn() {
 function btnA() {
     if (resp1.textContent === "Lisboa") {
         messageEl.textContent = "Correto!";
+        messageEl.style.color = 'green';
         setTimeout(() => {messageEl.textContent = "";}, 1500);
         numPnt.textContent = 1;
         quest2.style.display = "inline-block";
@@ -50,9 +51,11 @@ function btnA() {
         resp4.textContent = "30";
     } else if (resp1.textContent === "300" || resp1.textContent === "para Jogar") {
         messageEl.textContent = "Errado, Tente novamente.";
+        messageEl.style.color = 'red';
         setTimeout(() => {messageEl.textContent = "";}, 1500);
     } else if (resp1.textContent === "8 biliões") {
         messageEl.textContent = "Correto!";
+        messageEl.style.color = 'green';
         setTimeout(() => {messageEl.textContent = "";}, 1500);
         numPnt.textContent = 3;
         quest4.style.display = "inline-block";
@@ -66,9 +69,11 @@ function btnA() {
 function btnB() {
     if (resp2.textContent === "Porto" || resp2.textContent === "8 milhões" || resp2.textContent === "para Programar") {
         messageEl.textContent = "Errado, Tente novamente.";
+        messageEl.style.color = 'red';
         setTimeout(() => {messageEl.textContent = "";}, 1500);
     } else if (resp2.textContent === "90") {
         messageEl.textContent = "Correto!";
+        messageEl.style.color = 'green';
         setTimeout(() => {messageEl.textContent = "";}, 1500);
         numPnt.textContent = 2;
         quest3.style.display = "inline-block";
@@ -82,9 +87,11 @@ function btnB() {
 function btnC() {
     if (resp3.textContent === "Aveiro" || resp3.textContent === "60" || resp3.textContent === "12 biliões") {
         messageEl.textContent = "Errado, Tente novamente.";
+        messageEl.style.color = 'red';
         setTimeout(() => {messageEl.textContent = "";}, 1500);
     } else if (resp3.textContent === "para Reproduzir Mídia") {
         messageEl.textContent = "Correto!";
+        messageEl.style.color = 'green';
         setTimeout(() => {messageEl.textContent = "";}, 1500);
         numPnt.textContent = 4;
         quest1.style.display = "none";
@@ -102,6 +109,7 @@ function btnC() {
 function btnD() {
     if (resp4.textContent === "Guarda" || resp4.textContent === "30" || resp4.textContent === "6 biliões" || resp4.textContent === "para Navegar na Web") {
         messageEl.textContent = "Errado, Tente novamente.";
+        messageEl.style.color = 'red';
         setTimeout(() => {messageEl.textContent = "";}, 1500);
     }
 }
