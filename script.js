@@ -2,6 +2,7 @@ const titleEl = document.getElementById("title");
 const quest1 = document.getElementById("quest1");
 const quest2 = document.getElementById("quest2");
 const quest3 = document.getElementById("quest3");
+const quest4 = document.getElementById("quest4");
 let resp1 = document.getElementById("resp1");
 let resp2 = document.getElementById("resp2");
 let resp3 = document.getElementById("resp3");
@@ -16,6 +17,7 @@ const restart = document.getElementById("restartBtn");
 quest1.style.display = "none";
 quest2.style.display = "none";
 quest3.style.display = "none";
+quest4.style.display = "none";
 resp1.style.display = "none";
 resp2.style.display = "none";
 resp3.style.display = "none";
@@ -46,26 +48,23 @@ function btnA() {
         resp2.textContent = "90";
         resp3.textContent = "60";
         resp4.textContent = "30";
-    } else if (resp1.textContent === "300") {
+    } else if (resp1.textContent === "300" || resp1.textContent === "para Jogar") {
         messageEl.textContent = "Errado, Tente novamente.";
         setTimeout(() => {messageEl.textContent = "";}, 1500);
     } else if (resp1.textContent === "8 biliões") {
         messageEl.textContent = "Correto!";
         setTimeout(() => {messageEl.textContent = "";}, 1500);
         numPnt.textContent = 3;
-        quest1.style.display = "none";
-        quest2.style.display = "none";
+        quest4.style.display = "inline-block";
         quest3.style.display = "none";
-        winEl.style.display = "inline-block";
-        resp1.style.display = "none";
-        resp2.style.display = "none";
-        resp3.style.display = "none";
-        resp4.style.display = "none";
-        restart.style.display = "inline-block";
+        resp1.textContent = "para Jogar";
+        resp2.textContent = "para Programar";
+        resp3.textContent = "para Reproduzir Mídia";
+        resp4.textContent = "para Navegar na Web";
     }
 }
 function btnB() {
-    if (resp2.textContent === "Porto" || resp2.textContent === "8 milhões") {
+    if (resp2.textContent === "Porto" || resp2.textContent === "8 milhões" || resp2.textContent === "para Programar") {
         messageEl.textContent = "Errado, Tente novamente.";
         setTimeout(() => {messageEl.textContent = "";}, 1500);
     } else if (resp2.textContent === "90") {
@@ -84,10 +83,24 @@ function btnC() {
     if (resp3.textContent === "Aveiro" || resp3.textContent === "60" || resp3.textContent === "12 biliões") {
         messageEl.textContent = "Errado, Tente novamente.";
         setTimeout(() => {messageEl.textContent = "";}, 1500);
+    } else if (resp3.textContent === "para Reproduzir Mídia") {
+        messageEl.textContent = "Correto!";
+        setTimeout(() => {messageEl.textContent = "";}, 1500);
+        numPnt.textContent = 4;
+        quest1.style.display = "none";
+        quest2.style.display = "none";
+        quest3.style.display = "none";
+        quest4.style.display = "none";
+        winEl.style.display = "inline-block";
+        resp1.style.display = "none";
+        resp2.style.display = "none";
+        resp3.style.display = "none";
+        resp4.style.display = "none";
+        restart.style.display = "inline-block";
     }
 }
 function btnD() {
-    if (resp4.textContent === "Guarda" || resp4.textContent === "30" || resp4.textContent === "6 biliões") {
+    if (resp4.textContent === "Guarda" || resp4.textContent === "30" || resp4.textContent === "6 biliões" || resp4.textContent === "para Navegar na Web") {
         messageEl.textContent = "Errado, Tente novamente.";
         setTimeout(() => {messageEl.textContent = "";}, 1500);
     }
