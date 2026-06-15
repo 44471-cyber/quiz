@@ -44,7 +44,8 @@ function btnA() {
         messageEl.textContent = "Correto!";
         messageEl.style.color = 'green';
         setTimeout(() => {messageEl.textContent = "";}, 1500);
-        numPnt.textContent = 1;
+        numPnt.textContent = "0 + 1";
+        setTimeout(() => {numPnt.textContent = 1;}, 100);
         quest2.style.display = "inline-block";
         quest1.style.display = "none";
         resp1.textContent = "300";
@@ -59,7 +60,8 @@ function btnA() {
         messageEl.textContent = "Correto!";
         messageEl.style.color = 'green';
         setTimeout(() => {messageEl.textContent = "";}, 1500);
-        numPnt.textContent = 3;
+        numPnt.textContent = "2 + 1";
+        setTimeout(() => {numPnt.textContent = 3;}, 100);
         quest4.style.display = "inline-block";
         quest3.style.display = "none";
         resp1.textContent = "para Jogar";
@@ -77,7 +79,8 @@ function btnB() {
         messageEl.textContent = "Correto!";
         messageEl.style.color = 'green';
         setTimeout(() => {messageEl.textContent = "";}, 1500);
-        numPnt.textContent = 2;
+        numPnt.textContent = "1 + 1";
+        setTimeout(() => {numPnt.textContent = 2;}, 100);
         quest3.style.display = "inline-block";
         quest2.style.display = "none";
         resp1.textContent = "8 biliões";
@@ -95,7 +98,8 @@ function btnC() {
         messageEl.textContent = "Correto!";
         messageEl.style.color = 'green';
         setTimeout(() => {messageEl.textContent = "";}, 1500);
-        numPnt.textContent = 4;
+        numPnt.textContent = "3 + 1";
+        setTimeout(() => {numPnt.textContent = 4;}, 100);
         quest3.style.display = "none";
         quest4.style.display = "none";
         quest5.style.display = "inline-block";
@@ -114,7 +118,8 @@ function btnD() {
         messageEl.textContent = "Correto!";
         messageEl.style.color = 'green';
         setTimeout(() => {messageEl.textContent = "";}, 1500);
-        numPnt.textContent = 5;
+        numPnt.textContent = "4 + 1";
+        setTimeout(() => {numPnt.textContent = 5;}, 100);
         quest5.style.display = "none";
         winEl.style.display = "inline-block";
         resp1.style.display = "none";
