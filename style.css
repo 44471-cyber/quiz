@@ -28,19 +28,37 @@ button {
 #resp1 {
     background-color: aqua;
 }
+#resp1:hover {
+    background-color: darkcyan;
+}
 #resp2 {
     background-color: lightgreen;
+}
+#resp2:hover {
+    background-color: darkgreen;
 }
 #resp3 {
     background-color: orange;
 }
+#resp3:hover {
+    background-color: #8b4000;
+}
 #resp4 {
     background-color: crimson;
+}
+#resp4:hover {
+    background-color: darkred;
 }
 #restartBtn {
     background-color: white;
 }
+#restartBtn:hover {
+    background-color: gray;
+}
 #startBtn {
     background-color: purple;
     color: white;
+}
+#startBtn:hover {
+    background-color: #35063e;
 }
